@@ -1,0 +1,11 @@
+{
+  "name": "hostel.zero",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "if not exist .venv\\Scripts\\python.exe py -m venv .venv && .venv\\Scripts\\python.exe -m pip install -r requirements.txt",
+    "build": ".\\.venv\\Scripts\\python.exe run.py",
+    "dev": ".\\.venv\\Scripts\\python.exe run.py",
+    "start": "npm run dev"
+  }
+}
