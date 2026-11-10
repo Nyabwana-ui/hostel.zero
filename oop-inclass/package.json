@@ -1,0 +1,10 @@
+{
+  "name": "green-view-borrowing-club",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "if not exist .venv\\Scripts\\python.exe py -m venv .venv && .venv\\Scripts\\python.exe -m pip install -r requirements.txt",
+    "dev": ".\\.venv\\Scripts\\python.exe run.py",
+    "start": "npm run dev"
+  }
+}
